@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
-<body>
-    
+
+<header>
+
     <nav>
         <ul>
             <li>
@@ -27,10 +29,15 @@
             {{/if}}
         </ul>
     </nav>
-    {{{body}}}
 
     {{#if logged_in}}
     <script src="./js/logout.js"></script>
     {{/if}}
+</header>
+
+<body>
+    {{{body}}}
 </body>
+
 </html>
+
