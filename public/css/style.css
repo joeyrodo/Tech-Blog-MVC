@@ -1,11 +1,10 @@
 
 html {
-  background-color: green;
+  background: linear-gradient(180deg, lightgreen, skyblue);
 }
 
 header nav {
   vertical-align: middle;
-  float: right;  
 }
 
 header nav a {
@@ -25,7 +24,5 @@ header nav ul li {
   margin-right: 30px;
 }
 
-body {
-  background: linear-gradient(180deg, royalblue, skyblue);
-  
+main {
 }

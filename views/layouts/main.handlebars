@@ -8,36 +8,36 @@
     <title>Document</title>
 </head>
 
-<header>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="/">home</a>
-            </li>
-            {{#if logged_in}}
-            <li>
-                <a href="/dashboard">dashboard</a>
-            </li>
-            <li>
-                <button>logout</button>
-            </li>
-            {{else}}
-            <li>
-                <a href="/login">login/sign up</a>
-            </li>
-            {{/if}}
-        </ul>
-    </nav>
-
-    {{#if logged_in}}
-    <script src="./js/logout.js"></script>
-    {{/if}}
-</header>
-
 <body>
-    {{{body}}}
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">home</a>
+                </li>
+                {{#if logged_in}}
+                <li>
+                    <a href="/dashboard">dashboard</a>
+                </li>
+                <li>
+                    <button>logout</button>
+                </li>
+                {{else}}
+                <li>
+                    <a href="/login">login/sign up</a>
+                </li>
+                {{/if}}
+            </ul>
+        </nav>
+
+        {{#if logged_in}}
+        <script src="./js/logout.js"></script>
+        {{/if}}
+    </header>
+
+    <main>
+        {{{body}}}
+    </main>
 </body>
 
 </html>
-
