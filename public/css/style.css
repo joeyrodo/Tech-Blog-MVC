@@ -28,8 +28,9 @@ header nav ul li {
   justify-content: center;
 }
 
-#goofball {
+.hidden {
   color: green;
+  display: none;
 }
 
 .blogpost {
