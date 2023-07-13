@@ -13,6 +13,7 @@ async function signup(event) {
         console.log(response);
         document.location.replace("/dashboard")
     } catch (error) {
+        alert('Failed to login');
         console.log(error);
     }
 }
