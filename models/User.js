@@ -30,7 +30,7 @@ User.init({
             isEmail: true
         }
     },
-    
+
     password: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -44,18 +44,18 @@ User.init({
         hooks: {
             async beforeCreate(newData) {
                 newData.password = await bcrypt.hash(newData.password, 10)
-                return newData
+                return newData;
             },
 
             async beforeBulkCreate(usersData) {
-                usersData.forEach((user)=>{
-                user.password = bcrypt.hashSync(user.password, 10)
-                })
+                usersData.forEach((user) => {
+                    user.password = bcrypt.hashSync(user.password, 10)
+                });
             },
 
-            async beforeUpdate(newData) {
-                newData.password = await bcrypt.hash(newData.password, 10)
-                return newData
+            async beforeUpdate(updatedUserData) {
+                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10)
+                return updatedUserData;
             }
         },
         sequelize,
