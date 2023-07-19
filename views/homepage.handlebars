@@ -1,17 +1,17 @@
 homepage
 
-    <div class="blogpost">
-        <h2 class="blogpost-title"> Blog post title</h2>
-        <h5>11/11/1911</h5>
-        <div class="hidden">
-            <text class="blogpost-text" >
-                sample blogpost text <br>
-                this is sample text <br>
-                this should really be lorem ipsum text <br>
-                but im doing this anyway : ) </text>
-            <h4>poster username</h4>
-        </div>
-        {{#if logged_in}}
-        <button>comment</button>
-        {{/if}}
+<div class="blogpost">
+    <h2 class="blogpost-title"> Blog post title</h2>
+    <h5 class="blogpost-date">11/11/1911</h5>
+    <div class="hidden">
+        <text class="blogpost-text">
+            sample blogpost text <br>
+            this is sample text <br>
+            this should really be lorem ipsum text <br>
+            but im doing this anyway : ) </text>
+        <h4 class="poster-username">poster username</h4>
     </div>
+    {{#if logged_in}}
+    <button>comment</button>
+    {{/if}}
+</div>

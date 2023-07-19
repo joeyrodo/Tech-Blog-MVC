@@ -1,17 +1,26 @@
-dashboard
-<h1>hello</h1>
+<h1>dashboard</h1>
 
-<h6 id="goofball">im goofy</h6>
-
+Previous Blogposts go here:
 <div class="blogpost">
     <h2 class="blogpost-title"> Blog post title</h2>
-    <text class="blogpost-text">
-        sample blogpost text <br>
-        this is sample text <br>
-        this should really be lorem ipsum text <br>
-        but im doing this anyway : ) </text>
-    <h5 id="blogpost-date">11/11/1911</h5>
-            {{#if logged_in}}
-        <button>comment</button>
-        {{/if}}
+    <h5 class="blogpost-date">11/11/1911</h5>
+    <div class="hidden">
+        <text class="blogpost-text">
+            sample blogpost text <br>
+            this is sample text <br>
+            this should really be lorem ipsum text <br>
+            but im doing this anyway : ) </text>
+        <h4 class="poster-username">poster username</h4>
+    </div>
+    {{#if logged_in}}
+    <button>comment</button>
+    {{/if}}
 </div>
+
+<button>New Blog Post +</button>
+
+<form id="newpost" class="hidden">
+    <input placeholder="Enter new blog post title">
+    <input placeholder="Enter content for blog post:">
+    <button>submit</button>
+</form>
