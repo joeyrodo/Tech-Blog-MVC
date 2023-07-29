@@ -5,7 +5,7 @@ Previous Blogposts go here:
     <h2 class="blogpost-title"> Blog post title</h2>
     <h5 class="blogpost-date">11/11/1911</h5>
     <div class="hidden">
-        <text class="blogpost-text">
+        <text class="blogpost-body">
             sample blogpost text <br>
             this is sample text <br>
             this should really be lorem ipsum text <br>
@@ -19,8 +19,9 @@ Previous Blogposts go here:
 
 <button>New Blog Post +</button>
 
-<form id="newpost" class="hidden">
+<form id="newpost" class="">
     <input placeholder="Enter new blog post title">
     <input placeholder="Enter content for blog post:">
-    <button>submit</button>
+    <button type="submit" id="post-button">submit</button>
 </form>
+<script src="./js/post.js"></script>
