@@ -7,6 +7,7 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Questions](#questions)
 
 ## Description
 - This website allows you to log in, post and see blogs, and comments on other people's blogs!
@@ -21,3 +22,8 @@
 - Press submit to upload the post. 
 - See your blog posts on your dashboard and see others' posts on the homepage.
 - Select the "comment" button on a post to leave a comment. 
+
+## Questions
+- Contacts for questions about the software:
+- GitHub: github.com/joeyrodo
+- Email: joeyrodo@gmail.com
