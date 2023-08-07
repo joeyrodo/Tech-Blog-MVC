@@ -1,13 +1,13 @@
 const postHandler = async function (event) {
     event.preventDefault();
 
-    const postBody = document.querySelector('#blogpost-body');
-    const postTitle = document.querySelector('#blogpost-title');
+    const postContent = document.getElementById('content-input');
+    const postTitle = document.getElementById('title-input');
 
-    const response = await fetch('/api/users', {
+    await fetch('/api/blogs', {
         method: 'POST',
         body: JSON.stringify({
-            body: postBody.value,
+            content: postContent.value,
             title: postTitle.value,
             
         }),
@@ -15,11 +15,9 @@ const postHandler = async function (event) {
         
     });
 
-    if (response.ok) {
-        console.log(title + body);
-    } else {
-        alert('Failed to post');
-    }
+        console.log(postContent.value + postTitle.value);
+        document.location.replace('/dashboard');
+
 };
 
-document.getElementById("post-button").addEventListener("submit", postHandler);
+document.querySelector("#newpost").addEventListener("submit", postHandler);
