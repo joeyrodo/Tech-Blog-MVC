@@ -1,9 +1,11 @@
-//let blogpost = document.getElementsByClassName("blogpost");
-//hidden.addEventListener("click", showPost);
+let postFormButton = document.getElementById("new-post-button");
+let postForm = document.getElementById("newpost");
 
-//function showPost() {
-//    blogpost.children[2].classList.remove("hidden");
-//    console.log("post unhidden");
-//}
+postFormButton.addEventListener('click', showPost);
+
+function showPost() {
+    postForm.classList.remove("hidden");
+   console.log("post unhidden");
+}
 
 

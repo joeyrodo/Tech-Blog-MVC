@@ -2,24 +2,22 @@
 
 Previous Blogposts go here:
 <div class="blogpost">
-    <h2 class="blogpost-title"> Blog post title</h2>
-    <h5 class="blogpost-date">11/11/1911</h5>
+    <h2 class="blogpost-title"> {{title}}</h2>
+    <h5 class="blogpost-date">date</h5>
     <div class="hidden">
         <text class="blogpost-body">
-            sample blogpost text <br>
-            this is sample text <br>
-            this should really be lorem ipsum text <br>
-            but im doing this anyway : ) </text>
-        <h4 class="poster-username">poster username</h4>
+            {{post_content}}
+        <h4 class="poster-username">{{user.username}}</h4>
     </div>
     {{#if logged_in}}
     <button>comment</button>
     {{/if}}
 </div>
 
-<button>New Blog Post +</button>
 
-<form id="newpost" class="">
+<button id="new-post-button">New Blog Post +</button>
+
+<form id="newpost" class="hidden">
     <input id="title-input" placeholder="Enter new blog post title">
     <input id="content-input" placeholder="Enter content for blog post:">
     <button type="submit" id="post-button">submit</button>
